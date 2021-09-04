@@ -15,16 +15,16 @@
   
     <meta name="keywords" content="转存工具" />
   
-  <meta name="description" content="fclone在我看来是一款转存工具，我在上一篇博文telegram-channel-downloader里提到过它。为了让某些可能看到我那篇博文的小白顺利搭建出telegram-channel-downloader，我决定写一下上篇没有细说的fclone的安装的安装方法。   安装fclone  1wget https:&#x2F;&#x2F;github.com&#x2F;mawaya&#x2F;rclone&#x2F;releases&#x2F;dow">
+  <meta name="description" content="fclone在我看来是一款转存工具，我在上一篇博文telegram-channel-downloader里提到过它。为了让某些可能看到我那篇博文的小白顺利搭建出telegram-channel-downloader，我决定写一下上篇没有细说的fclone的安装的安装方法。 如果你在Google上搜索fclone，那么它出来的结果一定是与rclone相关的。事实确实如此，fclone就是rclone">
 <meta property="og:type" content="article">
 <meta property="og:title" content="fclone的安装">
-<meta property="og:url" content="http://example.com/2021/09/03/fclone/index.html">
+<meta property="og:url" content="http://example.com/2021/09/04/fclone/index.html">
 <meta property="og:site_name" content="BassYes的笔记小站">
-<meta property="og:description" content="fclone在我看来是一款转存工具，我在上一篇博文telegram-channel-downloader里提到过它。为了让某些可能看到我那篇博文的小白顺利搭建出telegram-channel-downloader，我决定写一下上篇没有细说的fclone的安装的安装方法。   安装fclone  1wget https:&#x2F;&#x2F;github.com&#x2F;mawaya&#x2F;rclone&#x2F;releases&#x2F;dow">
+<meta property="og:description" content="fclone在我看来是一款转存工具，我在上一篇博文telegram-channel-downloader里提到过它。为了让某些可能看到我那篇博文的小白顺利搭建出telegram-channel-downloader，我决定写一下上篇没有细说的fclone的安装的安装方法。 如果你在Google上搜索fclone，那么它出来的结果一定是与rclone相关的。事实确实如此，fclone就是rclone">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/null">
-<meta property="article:published_time" content="2021-09-03T07:30:43.688Z">
-<meta property="article:modified_time" content="2021-09-03T07:55:50.413Z">
+<meta property="article:published_time" content="2021-09-04T09:29:16.000Z">
+<meta property="article:modified_time" content="2021-09-04T09:29:16.371Z">
 <meta property="article:author" content="Bass">
 <meta property="article:tag" content="转存工具">
 <meta name="twitter:card" content="summary">
@@ -167,13 +167,13 @@
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2021-09-03</li>
+                <li><i class="fa fa-calendar"></i> 2021-09-04</li>
                 <li><i class="fa fa-user"></i> 作者 Bass</li>
                 <li>
                     <i class="fa fa-edit"></i> 
                     
                     
-                        420
+                        ~1.54K
                     
                     字
                 </li>
@@ -182,22 +182,75 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1630655750413"></time> 前，其中的内容可能需要更新。
+                本文最后编辑于 <time datetime="1630747756371"></time> 前，其中的内容可能需要更新。
             </div>
             
             <hr />
             <p>fclone在我看来是一款转存工具，我在上一篇博文<a href="/2021/09/01/telegram-channel-downloader/">telegram-channel-downloader</a>里提到过它。为了让某些可能看到我那篇博文的小白顺利搭建出telegram-channel-downloader，我决定写一下上篇没有细说的fclone的安装的安装方法。</p>
+<p>如果你在Google上搜索fclone，那么它出来的结果一定是与rclone相关的。事实确实如此，fclone就是rclone的变种，相比于rclone，fclone加快了传输速度。</p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-01.jpg"></p>
+<p>相比于与rclone，fclone已经有近一年没有更新了，但对于<a href="/2021/09/01/telegram-channel-downloader/">telegram-channel-downloader</a>的使用，它还是能胜任的。（还是建议使用<a target="_blank" rel="noopener" href="https://rclone.org/">rclone</a>）</p>
 <hr>
 <ul>
 <li>安装fclone</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/mawaya/rclone/releases/download/fclone-v0.4.1/fclone-v0.4.1-linux-amd64.zip -O fclone.zip &amp;&amp; unzip fclone.zip &amp;&amp; mv fclone*/fclone /usr/bin &amp;&amp; chmod +x /usr/bin/fclone &amp;&amp; fclone version</span><br></pre></td></tr></table></figure>
 
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-02.jpg" alt="安装成功"></p>
 <ul>
 <li>配置fclone</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fclone config</span><br></pre></td></tr></table></figure>
 
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-03.png"></p>
+<ul>
+<li><p>输入 <code>n</code>      #新建驱动器</p>
+</li>
+<li><p>在 <code>name&gt;</code> 后输入你想建立的驱动器名称</p>
+</li>
+</ul>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-04.png"></p>
+<p>-输入13，选择 <code>Google Drive</code>         #可能会因为版本的不同而改变 <strong>注意选择 Google drive</strong></p>
+<ul>
+<li><p><code>client_id&gt;</code> 可以用自己的Google Drive API的client_id，也可以直接回车</p>
+</li>
+<li><p>回车</p>
+</li>
+</ul>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-05.png"></p>
+<p><code>client_secret&gt;</code> 可以用自己的Google Drive API的client_secret，也可以直接回车</p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-06.png"></p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-07.png"></p>
+<ul>
+<li><p><code>scope&gt;</code> 输入<strong>1</strong>允许访问全部文件</p>
+</li>
+<li><p><code>root_folder_id&gt;</code> 直接回车</p>
+</li>
+</ul>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-08.png"></p>
+<ul>
+<li><code>service_account_file&gt;</code> 直接回车</li>
+</ul>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-09.png"></p>
+<p>Edit advanced config? (y/n)<br>y) Yes<br>n) No (default)<br>y/n&gt; n #不用别的高级配置</p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-10.png"></p>
+<p>Use auto config?</p>
+<p>y/n&gt; n</p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-11.png"></p>
+<p>浏览器打开链接登录谷歌账号获取Key</p>
+<p>Please go to the following link: <a target="_blank" rel="noopener" href="https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/">https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a><br>Log in and authorize rclone for access<br>Enter verification code&gt;贴入你获取到的key</p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-12.png"></p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-13-2.png"></p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-14-1.png"></p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-15.png"></p>
+<p>Configure this as a team drive?<br>y) Yes<br>n) No (default)<br>y/n&gt; 挂载共享网盘选择 y 挂载自己的网盘目录选 n</p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-16.png"></p>
+<p>确认配置是否正确</p>
+<p>y) Yes this is OK (default)<br>e) Edit this remote<br>d) Delete this remote<br>y/e/d&gt; y</p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-17.png"></p>
+<p>e) Edit existing remote<br>n) New remote<br>d) Delete remote<br>r) Rename remote<br>c) Copy remote<br>s) Set configuration password<br>q) Quit config<br>e/n/d/r/c/s/q&gt; q</p>
+<p><img src="https://github.com/BassYes/tupian/blob/main/%E5%85%8B%E9%9A%86/RCLONE-18.png"></p>
+<p><strong>至此，搭建成功！</strong></p>
 
         </div>
         
@@ -251,7 +304,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2021/09/03/fclone/",
+                text: "http://example.com/2021/09/04/fclone/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -263,7 +316,7 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2021/09/03/fclone/";
+            const hostUrl       = "http://example.com/2021/09/04/fclone/";
             const title         = "「fclone的安装」";
             const excerpt       = `fclone在我看来是一款转存工具，我在上一篇博文telegram-channel-downloader里提到过它。为了让某些可能看到我那篇博文的小白顺利搭建出telegram-channel-downloader，我决定写一下上篇没...`;
             let _URL;
@@ -287,7 +340,7 @@
                     <a class="tag-none-link" href="/tags/%E8%BD%AC%E5%AD%98%E5%B7%A5%E5%85%B7/" rel="tag">转存工具</a>
                 </div>
                 <div class="pull-date">
-                <span>最后编辑：2021-09-03</span>
+                <span>最后编辑：2021-09-04</span>
                 </div>
             </div>
         </footer>
@@ -296,13 +349,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" Linux命令-cd pwd" href="/2021/09/02/cd/">&lt; 上一篇</a>
+                <a title=" 阿里云盘影视资源分享（搬运）" href="/2021/09/03/aliyunwp/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" 阿里云盘影视资源分享（搬运）" href="/2021/09/03/aliyunwp/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
@@ -357,13 +406,13 @@
         
           
           
-            <a class="list-group-item" href="/2021/09/03/aliyunwp/"><i class="fa  fa-book"></i> 阿里云盘影视资源分享（搬运）</a>
+            <a class="list-group-item" href="/2021/09/04/fclone/"><i class="fa  fa-book"></i> fclone的安装</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2021/09/03/fclone/"><i class="fa  fa-book"></i> fclone的安装</a>
+            <a class="list-group-item" href="/2021/09/03/aliyunwp/"><i class="fa  fa-book"></i> 阿里云盘影视资源分享（搬运）</a>
             
           
         
