@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>BassYes的笔记小站</title>
+  <title>nginxwebfailed | BassYes的笔记小站</title>
   <meta name="author" content="Bass" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,17 +13,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="Failed, Ubuntu/Debian, nginx" />
   
-  <meta name="description" content="思想上的小矮子，技术上的小菜鸡，对一些折腾的东西非常感兴趣！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="BassYes的笔记小站">
-<meta property="og:url" content="http://example.com/tags/%E8%BD%AC%E5%AD%98%E5%B7%A5%E5%85%B7/index.html">
+  <meta name="description" content="安装nginx时报错Failed to start A high performance web server and a reverse proxy server.  报错原因可能是因为之前卸载nginx没有卸载干净所导致的，执行以下命令清除卸载残留即可再次安装。 123456sudo apt-get remove nginx nginx-commonsudo apt-get purge ngi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nginxwebfailed">
+<meta property="og:url" content="http://example.com/2021/09/10/nginxwebfailed/index.html">
 <meta property="og:site_name" content="BassYes的笔记小站">
-<meta property="og:description" content="思想上的小矮子，技术上的小菜鸡，对一些折腾的东西非常感兴趣！">
+<meta property="og:description" content="安装nginx时报错Failed to start A high performance web server and a reverse proxy server.  报错原因可能是因为之前卸载nginx没有卸载干净所导致的，执行以下命令清除卸载残留即可再次安装。 123456sudo apt-get remove nginx nginx-commonsudo apt-get purge ngi">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/null">
+<meta property="article:published_time" content="2021-09-10T00:35:04.000Z">
+<meta property="article:modified_time" content="2021-09-10T00:42:51.865Z">
 <meta property="article:author" content="Bass">
+<meta property="article:tag" content="nginx">
+<meta property="article:tag" content="Failed">
+<meta property="article:tag" content="Ubuntu&#x2F;Debian">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/null">
 <meta name="twitter:site" content="@null">
@@ -156,71 +161,144 @@
 
         
 
+            <article>
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
             
-    
-    
-        <article class="kratos-hentry clearfix">
-            <div class="kratos-entry-border-new clearfix">
+                <h1 class="kratos-entry-title text-center">nginxwebfailed</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><i class="fa fa-calendar"></i> 2021-09-10</li>
+                <li><i class="fa fa-user"></i> 作者 Bass</li>
+                <li>
+                    <i class="fa fa-edit"></i> 
+                    
+                    
+                        320
+                    
+                    字
+                </li>
                 
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2021/09/04/fclone/">
-                        
-                            <img class="kratos-entry-thumb-new-img">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2021/09/04/fclone/">fclone的安装</a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p>
-                            
-                                fclone在我看来是一款转存工具，我在上一篇博文telegram-channel-downloader里提到过它。为了让某些可能看到我那篇博文的小白顺利搭建出telegram-channel-downloader，我决定写一下上篇没...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2021-09-04
-                        </a>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E8%BD%AC%E5%AD%98%E5%B7%A5%E5%85%B7/" rel="tag">转存工具</a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2021/09/04/fclone/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                本文最后编辑于 <time datetime="1631234571865"></time> 前，其中的内容可能需要更新。
             </div>
-        </article>
-    
-
-
-
-
-
-    <div class="hidden">
-        <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
+            
+            <hr />
+            <p>安装nginx时报错<strong>Failed to start A high performance web server and a reverse proxy server.</strong></p>
+<hr>
+<p>报错原因可能是因为之前卸载nginx没有卸载干净所导致的，执行以下命令清除卸载残留即可再次安装。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get remove nginx nginx-common</span><br><span class="line">sudo apt-get purge nginx nginx-common</span><br><span class="line">sudo apt-get autoremove</span><br><span class="line">sudo apt-get remove nginx-full nginx-common</span><br><span class="line"></span><br><span class="line">sudo apt-get install nginx     #安装nginx</span><br></pre></td></tr></table></figure>
+        </div>
         
+            <div class="kratos-copyright text-center clearfix">
+                <h5>本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
     </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "http://example.com/2021/09/10/nginxwebfailed/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "http://example.com/2021/09/10/nginxwebfailed/";
+            const title         = "「nginxwebfailed」";
+            const excerpt       = `安装nginx时报错Failed to start A high performance web server and a reverse proxy server.
 
-
+报错原因可能是因为之前卸载nginx没有卸载干净所导致的，执行以...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/Failed/" rel="tag">Failed</a>, <a class="tag-none-link" href="/tags/Ubuntu-Debian/" rel="tag">Ubuntu/Debian</a>, <a class="tag-none-link" href="/tags/nginx/" rel="tag">nginx</a>
+                </div>
+                <div class="pull-date">
+                <span>最后编辑：2021-09-10</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" fclone的安装" href="/2021/09/04/fclone/">&lt; 上一篇</a>
+            </div>
+            
+            
+        </nav>
+    
+    
+</article>
 
         
 
@@ -233,8 +311,6 @@
 
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
     <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
-    
-        <div class="sticky-area">
     
     
                 <aside id="krw-about" class="widget widget-kratos-about clearfix">
@@ -249,6 +325,8 @@
     </div>
 </aside>
             
+                    <div class="sticky-area">
+                
                 
 
             
