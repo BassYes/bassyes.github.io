@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://433311.xyz/null">
 <meta property="article:published_time" content="2021-10-24T06:24:03.000Z">
-<meta property="article:modified_time" content="2021-10-24T06:59:40.658Z">
+<meta property="article:modified_time" content="2021-10-24T08:01:00.810Z">
 <meta property="article:author" content="Bass">
 <meta property="article:tag" content="nginx">
 <meta name="twitter:card" content="summary">
@@ -173,7 +173,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        328
+                        336
                     
                     字
                 </li>
@@ -182,36 +182,36 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1635058780658"></time> 前，其中的内容可能需要更新。
+                本文最后编辑于 <time datetime="1635062460810"></time> 前，其中的内容可能需要更新。
             </div>
             
             <hr />
-            <p>今天突然发现自己的某个网站没法访问了，一番探查之下，发现竟然是Nginx的问题。</p>
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>今天突然发现自己的某个网站没法访问了，一番探查之下，发现竟然是Nginx的问题。</p>
 <blockquote>
 <p>nginx: [emerg] still could not bind()</p>
 </blockquote>
-<p><a href="/images/nginx/1.jpg"></a></p>
+<p><img src="/images/nginx/1.jpg"></p>
 <p>这就是运行Nginx的报错了。</p>
 <p>知道了这个提示，解决方法就很简单了。</p>
 <p>这是端口的占用问题。</p>
-<p>可以使用<br><code>netstat -ntpl</code><br>或<br><code>netstat -ntlp|grep 80</code><br>查看端口占用。</p>
-<p><a href="/images/nginx/2.jpg"></a></p>
+<p>可以使用<code>netstat -ntpl</code>或<code>netstat -ntlp|grep 80</code>查看端口占用。</p>
+<p><img src="/images/nginx/2.jpg"></p>
 <p>这里80端口被Nginx占用了，我尝试关闭Nginx但对于80端口的占用没有影响。</p>
 <p>只能先<code>kill</code>掉了。</p>
 <blockquote>
-<p>kill -9 2106<a href="PID">^1</a></p>
+<p>kill -9 2106<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="PID">[1]</span></a></sup></p>
 </blockquote>
-<p><a href="/images/nginx/3.jpg"></a></p>
+<p><img src="/images/nginx/3.jpg"></p>
 <p>运行Nginx,依旧报错。</p>
-<p><a href="/images/nginx/4.jpg"></a></p>
+<p><img src="/images/nginx/4.jpg"></p>
 <p>查看端口占用，emmmm，好像没有杀死进程。</p>
-<p><a href="/images/nginx/5.jpg"></a></p>
-<p>再杀一次！！！<br>查看端口占用。</p>
-<p><a href="/images/nginx/6.jpg"></a></p>
+<p><img src="/images/nginx/5.jpg"></p>
+<p>再杀一次！！！查看端口占用。</p>
+<p><img src="/images/nginx/6.jpg"></p>
 <p>这次好了。(<em>^_^</em>)</p>
 <p>启动Nginx。</p>
-<p><a href="/images/nginx/7.jpg"></a></p>
-<p>没问题。</p>
+<p><img src="/images/nginx/7.jpg"></p>
+<p>没问题。<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">PID<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div></p>
 
         </div>
         
