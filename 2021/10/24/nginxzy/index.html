@@ -15,16 +15,16 @@
   
     <meta name="keywords" content="nginx" />
   
-  <meta name="description" content="这个世界上的大多数软件（系统）问题可以通过重启解决  今天突然发现自己的某个网站没法访问了，一番探查之下，发现竟然是Nginx的问题。  nginx: [emerg] still could not bind()   这就是运行Nginx的报错了。 知道了这个提示，解决方法就很简单了。 这是端口的占用问题。 可以使用netstat -ntpl或netstat -ntlp|grep 80查看端口占用">
+  <meta name="description" content="这个世界上的大多数软件（系统）问题可以通过重启解决  访问成功o(￣▽￣)ブ    今天突然发现自己的某个网站没法访问了，一番探查之下，发现竟然是Nginx的问题。  nginx: [emerg] still could not bind()   这就是运行Nginx的报错了。 知道了这个提示，解决方法就很简单了。 这是端口的占用问题。 可以使用netstat -ntpl或netstat -ntl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nginx运行报错">
 <meta property="og:url" content="https://433311.xyz/2021/10/24/nginxzy/index.html">
 <meta property="og:site_name" content="BassYes的笔记小站">
-<meta property="og:description" content="这个世界上的大多数软件（系统）问题可以通过重启解决  今天突然发现自己的某个网站没法访问了，一番探查之下，发现竟然是Nginx的问题。  nginx: [emerg] still could not bind()   这就是运行Nginx的报错了。 知道了这个提示，解决方法就很简单了。 这是端口的占用问题。 可以使用netstat -ntpl或netstat -ntlp|grep 80查看端口占用">
+<meta property="og:description" content="这个世界上的大多数软件（系统）问题可以通过重启解决  访问成功o(￣▽￣)ブ    今天突然发现自己的某个网站没法访问了，一番探查之下，发现竟然是Nginx的问题。  nginx: [emerg] still could not bind()   这就是运行Nginx的报错了。 知道了这个提示，解决方法就很简单了。 这是端口的占用问题。 可以使用netstat -ntpl或netstat -ntl">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://433311.xyz/null">
 <meta property="article:published_time" content="2021-10-24T06:24:03.000Z">
-<meta property="article:modified_time" content="2021-10-24T12:11:40.988Z">
+<meta property="article:modified_time" content="2021-10-30T08:48:03.715Z">
 <meta property="article:author" content="Bass">
 <meta property="article:tag" content="nginx">
 <meta name="twitter:card" content="summary">
@@ -173,7 +173,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        363
+                        378
                     
                     字
                 </li>
@@ -182,12 +182,16 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1635077500988"></time> 前，其中的内容可能需要更新。
+                本文最后编辑于 <time datetime="1635583683715"></time> 前，其中的内容可能需要更新。
             </div>
             
             <hr />
             <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><strong>这个世界上的大多数软件（系统）问题可以通过重启解决</strong></p>
 <hr>
+<div class="alert alert-success"><p>访问成功o(<em>￣▽￣</em>)ブ</p>
+</div>
+
+<p><img src="/images/shou/nginxzy.jpg"></p>
 <p>今天突然发现自己的某个网站没法访问了，一番探查之下，发现竟然是Nginx的问题。</p>
 <blockquote>
 <p>nginx: [emerg] still could not bind()</p>
@@ -283,12 +287,13 @@
             const title         = "「Nginx运行报错」";
             const excerpt       = `这个世界上的大多数软件（系统）问题可以通过重启解决
 
+访问成功o(￣▽￣)ブ
+
+
+
 今天突然发现自己的某个网站没法访问了，一番探查之下，发现竟然是Nginx的问题。
 
-nginx: [emerg] still could not bind()
-
-
-这就是运行Ngi...`;
+nginx: [emerg] still could not bi...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -310,7 +315,7 @@ nginx: [emerg] still could not bind()
                     <a class="tag-none-link" href="/tags/nginx/" rel="tag">nginx</a>
                 </div>
                 <div class="pull-date">
-                <span>最后编辑：2021-10-24</span>
+                <span>最后编辑：2021-10-30</span>
                 </div>
             </div>
         </footer>
